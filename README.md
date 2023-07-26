@@ -5,7 +5,7 @@ Just clone the repository in the folder you want, then lauch the script you want
 
 # WolverineScripts
 
-WolverineScripts is a bunch of little script to simplify your life while hacking ! It makes it way faster and easyer (not needed to learn every commands...)
+WolverineScripts is a bunch of little scripts to simplify your life while hacking ! It makes it way faster and easier (not needed to learn every commands...)
 
 # Tools in the Framework
 
