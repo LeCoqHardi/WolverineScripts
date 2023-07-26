@@ -17,9 +17,9 @@ WolverineScripts is a bunch of little script to simplify your life while hacking
 
 Have fun with this little script, if you want to contact me, you can on Discord, Twitch or Twitter :
 
-Discord : lecoqhardi
-Twitter : @LeCoqHardi__
-Twitch : https://www.twitch.tv/LeCoqHardi
+- Discord : lecoqhardi
+- Twitter : @LeCoqHardi__
+- Twitch : https://www.twitch.tv/LeCoqHardi
 
 # Important Notes
 
