@@ -24,4 +24,4 @@ Have fun with this little script, if you want to contact me, you can on Discord,
 # Important Notes
 
 - Made to work on Kali Linux but should work in any Linux Distros
-- I can't be harmed if you do shit with thoses scripts, it's your own problem, I'm just providing them for learning purpose.
+- I can't be harmed if you do shit with these scripts, it's your own problem, I'm just providing them for learning purpose.
