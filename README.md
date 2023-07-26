@@ -1,4 +1,4 @@
-<img src="assets/Banner.png">
+<img src="assets/banner.png">
 
 # How to use
 Just clone the repository in the folder you want, then lauch the script you want to use.<br>
