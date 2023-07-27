@@ -1,5 +1,8 @@
 <img src="assets/banner.png">
 
+Within the digital realm, unseen hands explore, seeking ways to unlock possibilities untold.
+
+
 # How to use
 Just clone the repository in the folder you want, then lauch the script you want to use.<br>
 
