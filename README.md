@@ -4,7 +4,7 @@
 
 
 # How to use
-Just clone the repository in the folder you want, then lauch the script you want to use.<br>
+Just clone the repository in the folder you want, then lauch the wolverine script or go to script folder and launch the script you want to use.<br>
 
 # WolverineScripts
 
