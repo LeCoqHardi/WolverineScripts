@@ -1,0 +1,45 @@
+#!/bin/env python3
+
+from simple_term_menu import TerminalMenu
+import os
+
+def banner():
+    print("\n----------------------------------")
+    print(" █     █░ ▒█████   ██▓  ██▒   █▓▓█████  ██▀███   ██▓ ███▄    █ ▓█████ ")
+    print("▓█░ █ ░█░▒██▒  ██▒▓██▒ ▓██░   █▒▓█   ▀ ▓██ ▒ ██▒▓██▒ ██ ▀█   █ ▓█   ▀ ")
+    print("▒█░ █ ░█ ▒██░  ██▒▒██░  ▓██  █▒░▒███   ▓██ ░▄█ ▒▒██▒▓██  ▀█ ██▒▒███   ")
+    print("░█░ █ ░█ ▒██   ██░▒██░   ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  ░██░▓██▒  ▐▌██▒▒▓█  ▄ ")
+    print("░░██▒██▓ ░ ████▓▒░░██████▒▒▀█░  ░▒████▒░██▓ ▒██▒░██░▒██░   ▓██░░▒████▒")
+    print("░ ▓░▒ ▒  ░ ▒░▒░▒░ ░ ▒░▓  ░░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░░▓  ░ ▒░   ▒ ▒ ░░ ▒░ ░")
+    print("Within the digital realm, unseen hands explore, seeking ways to unlock possibilities untold.")
+    print("By LeCoqHardi")
+    print("-----------------------------------")
+
+def ReturnToMenu():
+    os.system("clear")
+    banner()
+    options = ["Bruteforce", "DoS", "MitM", "x", "x", "Exit"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    Output = options[menu_entry_index]
+    return Output
+
+def main(): 
+    path = "./scripts/"
+    while(1):
+        UserChoice = ReturnToMenu()
+# -= [Bruteforce PART] =-
+        if (UserChoice == "Bruteforce"):
+            os.system("./" + path + "Bruteforce")
+# -= [DoS PART] =-
+        if (UserChoice == "DoS"):
+            os.system("./" + path + "DoS")
+# -= [MitM Part] =-
+        if (UserChoice == "MitM"):
+            os.system("./" + path + "MitM")
+# -= [EXIT SCRIPT] =-
+        if (UserChoice == "Exit"):
+            quit()
+
+if __name__ == "__main__":
+    main()
