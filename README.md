@@ -1,6 +1,6 @@
 <img src="assets/banner.png">
 
-<i>"Within the digital realm, unseen hands explore, seeking ways to unlock possibilities untold."</i>
+*"Within the digital realm, unseen hands explore, seeking ways to unlock possibilities untold."*
 
 
 # How to use
